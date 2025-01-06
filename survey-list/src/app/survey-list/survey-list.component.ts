@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './survey-list.component.scss'
 })
 export class SurveyListComponent {
+  @Input() surveyList: Survey[];
+
 
 }
