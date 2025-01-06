@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   categories: string[] = ['Development', 'Workplace', 'Hardware'];
   filteredList: Survey[] = [];
 
+
   status = 'status';
   category = 'category';
 

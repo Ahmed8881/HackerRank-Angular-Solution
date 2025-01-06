@@ -5,6 +5,7 @@
     <filters [filterType]="category" [filterValues]="categories" (onFilterSelected)="onFilterSelected($event, 'category')"></filters>
   </section>
 <section class="layout-column flex">
-  <survey-list [surveys]="filteredSurveys"></survey-list>
+  <app-survey-list [surveyList]="filteredList"></app-survey-list>
+  
 </section>
 </div>
