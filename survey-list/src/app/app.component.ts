@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Survey } from './types/Survey';
 import { SurveyListComponent } from './survey-list/survey-list.component';
 import { Filters } from "./filters/filters.component";
@@ -7,9 +7,8 @@ import { Filters } from "./filters/filters.component";
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-
   styleUrls: ['./app.component.scss'],
-  imports: [Filters,SurveyListComponent]
+  imports: [Filters, SurveyListComponent] // Ensure SurveyListComponent is imported here
 })
 export class AppComponent implements OnInit {
 

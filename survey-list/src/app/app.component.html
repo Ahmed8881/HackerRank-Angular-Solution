@@ -4,6 +4,7 @@
     <filters [filterType]="status" [filterValues]="statuses" (onFilterSelected)="onFilterSelected($event, 'status')"></filters>
     <filters [filterType]="category" [filterValues]="categories" (onFilterSelected)="onFilterSelected($event, 'category')"></filters>
   </section>
-
-  <survey-list [surveyList]="filteredList"></survey-list>
+<section class="layout-column flex">
+  <survey-list [surveys]="filteredSurveys"></survey-list>
+</section>
 </div>
