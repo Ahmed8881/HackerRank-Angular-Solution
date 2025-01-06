@@ -1,14 +1,20 @@
+
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'filters',
   templateUrl: './filters.component.html',
-  styleUrls: ['./filters.component.scss']
+  styleUrls: ['./filters.component.scss'],
+  standalone: true,
+  imports: [CommonModule]
 })
 
 export class Filters implements OnInit {
-  @Input() filterType: string;
-  @Input() filterValues: string[];
+  @Input()
+  filterType!: string;
+  @Input()
+  filterValues!: string[];
   @Output() onFilterSelected: EventEmitter<string> = new EventEmitter<string>();
   selectedFilter: string = '';
   isSelected: boolean = false;

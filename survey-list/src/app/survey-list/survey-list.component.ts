@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Survey } from '../types/Survey';
 
 @Component({
   selector: 'app-survey-list',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './survey-list.component.scss'
 })
 export class SurveyListComponent {
-  @Input() surveyList: Survey[];
+  @Input() surveyList!: Survey[];
 
 
 }
